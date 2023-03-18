@@ -1,13 +1,20 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #000000;
+    font-family: 'Poppins';
+    font-style: normal;
   }
-  /* header css */
-  .container {
+  #home{
+    background-color: #1F1F1F;
     width: 100%;
   }
+ 
+  .header {
+    width: 100%;
+  }
+  
   .navbar {
     display: flex;
     justify-content: space-around;
@@ -24,16 +31,13 @@
     padding: 0 30px;
     margin-top: 10px;
     cursor: pointer;
-  
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 72px;
     color: #FFFFFF;
   }
   .center-nav{
-    width: 597px;
+    width: 560px;
     height: 53px;
     background: #262626;
     display: flex;
@@ -45,7 +49,7 @@
     width: 100%;
   }
   .center-nav input{
-    width: 100%;
+    width: 80%;
     background: #262626;
     flex: 1;
     border: 0;
@@ -74,16 +78,13 @@
     justify-content: space-around;
     
     background-color: #262626;
-    border-radius: 15px;
-  
-    font-family: 'Poppins';
-    font-style: normal;
+    border-radius: 15px; 
     font-weight: 600;
     font-size: 22px;
     line-height: 33px;
   }
   
-  /* main box with icons */
+ /* * main box with icons *  */
   .box{
     padding: 10px;
     padding-top: 20px;
@@ -102,8 +103,6 @@
   .box #about{
     margin-top: 20px;
     margin-left: 45px;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 72px;
@@ -154,43 +153,44 @@
     right: 10px;
   }
   .sector1 p{
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
     color: #C4C4C4;
     align-content: center;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-left: 10px;
     background-color: #262626;
   }
-  .sector2 .btn{
-    background: #FECB03;
+  .btn{
+    background:#FECB03;
     border-radius: 50px;
     padding: 10px;
     margin: 10px;
-    width: 260px;
-    height: 107px;
-    position: relative;
-    bottom: 6px;
-    cursor: pointer;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
-    font-size: 35px;
-    line-height: 52px;
-    /* identical to box height */
     color: #262626;
+    cursor: pointer;
   }
-  .sector2 .btn:hover{
+  .btn:hover{
     background-color: #ffdc4f;
     transform: scale(1.25);
     transition-duration: 0.2s;
   }
+  .sector2 .btn{
+    width: 260px;
+    height: 107px;
+    position: relative;
+    bottom: 6px;
+    font-size: 35px;
+    line-height: 52px;
+  }
+  .flex-box .btn{
+    width: 170px;
+    height: 64px;
+    font-size: 15px;
+    line-height: 22px;
+  }
   .our_cat{
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 45px;
     line-height: 68px;
@@ -200,7 +200,7 @@
     padding: 40px;
     margin-bottom: 30px;
   }
-  /* caategory cards and flex */
+ 
   .category{
     width: 100%;
     height: auto;
@@ -223,11 +223,18 @@
     padding-top: 35px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: left;
   }
-  .flex-box h2{
-    font-family: 'Poppins';
-  font-style: normal;
+  .flex-box > div{
+    display: flex;
+    align-items: center;
+  }
+  .flex-box .btn_div{
+    width: 100%;
+    height: 20%;
+    justify-content: right;
+  }
+  .flex-box h2{ 
   font-weight: 600;
   font-size: 30px;
   line-height: 45px;
@@ -236,8 +243,6 @@
   }
   .flex-box p{
     height: 70%;
-    font-family: 'Poppins';
-  font-style:normal ;
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
@@ -245,67 +250,47 @@
   background-color: transparent;
   color: rgba(255, 255, 255, 0.8);
   }
-  .flex-box .btn{
-    background: #FECB03;
-    border-radius: 50px;
-    padding: 10px;
-    margin: 10px;
-    width: 170px;
-    height: 64px;
-    
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-
-    color: #262626;
-  }
-  .flex-box .btn:hover{
-    cursor: pointer;
-    background-color: #ffdc4f;
-    transform: scale(1.25);
-    transition-duration: 0.2s;
-  }
-  /* footer class */
-  .footer {
-    
+  
+ /* * footer class *  */
+ footer {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: #1F1F1F;
+  padding: 10px;
+  display: flex;
+} 
+ .footer_content {
     display: flex;
     justify-content: space-evenly;
-    
     background: #262626;
-    margin:50px;
-    height: 280px;
-    padding: 20px;
+    left: 33px;
+    width: 100%;
+    margin: 20px;
+    height: 350px;
+    padding: 10px;
     border-radius: 30px;
     color:rgb(255, 255, 255);
   }
   .forent {
-    padding-top: 15px;
+    
     width: 35%;
     background-color: transparent;
   }
-  .forent h3{
-    font-family: 'Poppins';
-    font-style: normal;
+  .forent h2{
     font-weight: 700;
     font-size: 48px;
     line-height: 72px;
     background-color: #262626;
   }
   .forent p{
-    font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 27px;
   color: rgba(255, 255, 255, 0.8);
   background-color: #262626;
   }
-  .footer h2{
-    font-family: 'Poppins';
-    font-style: normal;
+  .footer_content h2{
     font-weight: 600;
     font-size: 32px;
     line-height: 48px;
@@ -313,38 +298,28 @@
     padding-bottom: 10px;
     background-color: #262626;
   }
-  .footer .navigation li {
-    text-decoration: none;
+  .footer_content .sitemap li {
     list-style-type: none;
-  
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 35px;
     background-color: #262626;
   }
-  .footer .navigation a {
+  .footer_content .sitemap a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
     background-color: #262626;
   }
-  .footer .socials li {
-    text-decoration: none;
+  .footer_content .socials li {
     list-style-type: none;
-  
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 35px;
     background-color: #262626;
   }
-  .footer .socials a {
+  .footer_content .socials a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
     background-color: #262626;
   }
-  
-  
   
