@@ -12,13 +12,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 6px;
   }
   .right-nav {
     display: flex;
   }
   .left-nav #logo {
-    width: 20%;
+    width: 25%;
     color: rgb(255, 255, 255);
     padding: 0 30px;
     margin-top: 10px;
@@ -32,7 +33,8 @@
     color: #FFFFFF;
   }
   .center-nav{
-    width: 60%;
+    width: 597px;
+    height: 53px;
     background: #262626;
     display: flex;
     align-items: center;
@@ -62,13 +64,14 @@
     
     border: none;
     color: white;
-    width: 150px;
+    width: auto;
     padding: 10px ;
     margin-left: 10px;
     margin-right: 10px;
-
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     
     background-color: #262626;
     border-radius: 15px;
@@ -83,18 +86,22 @@
   /* main box with icons */
   .box{
     padding: 10px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
+    justify-content: center;
+    width: 90%;
+    height: 588px;
+    margin-left: 100px;
+    margin-right: 100px;
     background: #262626;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
-    margin:20px;
-    height: auto;
   }
 
-  .box p{
+  .box #about{
+    margin-top: 20px;
+    margin-left: 45px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -107,15 +114,16 @@
   .box .perks{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     background: #262626;
     padding: 20px;
+    padding-top: 15px;
   }
   .perks .sector1{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     background: #262626;
   }
@@ -131,18 +139,19 @@
     background: #262626;
   }
   .sector1 img{
-    width: 100px;
-    height: 100px;
+    width: 105px;
+    height: 105px;
     border-radius: 100px;
     background: #262626;
-    margin: 10px;
+    margin: 8px;
   }
   .sector2 img{
-    width: 300px;
-    height: 300px;
+    width: 288px;
+    height: 288px;
     background: #262626;
     position: relative;
-    bottom: 50px;
+    bottom: 40px;
+    right: 10px;
   }
   .sector1 p{
     font-family: 'Poppins';
@@ -153,16 +162,19 @@
     color: #C4C4C4;
     align-content: center;
     padding-top: 40px;
+    padding-left: 10px;
+    background-color: #262626;
   }
   .sector2 .btn{
     background: #FECB03;
     border-radius: 50px;
     padding: 10px;
     margin: 10px;
-    align-self:last baseline;
+    width: 260px;
+    height: 107px;
+    position: relative;
+    bottom: 6px;
     cursor: pointer;
-
-    justify-content: flex-start;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -176,23 +188,39 @@
     transform: scale(1.25);
     transition-duration: 0.2s;
   }
+  .our_cat{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 68px;
+
+    color: #FFFFFF;
+    margin: 50px;
+    padding: 40px;
+    margin-bottom: 30px;
+  }
   /* caategory cards and flex */
   .category{
     width: 100%;
     height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
     color:rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
   .flex-box{
-    width: 30%;
-    height: auto;
+    width: 25%;
+    height: 390px;
     background: #1F1F1F;
     border: 3px solid #262626;
     border-radius: 20px;
-    margin: 10px;
+    margin: 40px;
+    margin-top: 10px;
     padding: 20px;
+    padding-top: 35px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -207,6 +235,7 @@
   color: #C4C4C4;
   }
   .flex-box p{
+    height: 70%;
     font-family: 'Poppins';
   font-style:normal ;
   font-weight: 400;
@@ -221,8 +250,9 @@
     border-radius: 50px;
     padding: 10px;
     margin: 10px;
-    align-self:last baseline;
-    cursor: pointer;
+    width: 170px;
+    height: 64px;
+    
 
     font-family: 'Poppins';
     font-style: normal;
@@ -233,26 +263,27 @@
     color: #262626;
   }
   .flex-box .btn:hover{
+    cursor: pointer;
     background-color: #ffdc4f;
     transform: scale(1.25);
     transition-duration: 0.2s;
   }
   /* footer class */
   .footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
     background: #262626;
-    margin:30px;
-    height: auto;
+    margin:50px;
+    height: 280px;
+    padding: 20px;
     border-radius: 30px;
     color:rgb(255, 255, 255);
   }
   .forent {
-    padding: 10px;
-    width: 45%;
+    padding-top: 15px;
+    width: 35%;
     background-color: transparent;
   }
   .forent h3{
@@ -261,7 +292,7 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 72px;
-    background-color: transparent;
+    background-color: #262626;
   }
   .forent p{
     font-family: 'Poppins';
@@ -270,7 +301,7 @@
   font-size: 18px;
   line-height: 27px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: transparent;
+  background-color: #262626;
   }
   .footer h2{
     font-family: 'Poppins';
@@ -280,7 +311,7 @@
     line-height: 48px;
     color: #FFFFFF;
     padding-bottom: 10px;
-    background-color: transparent;
+    background-color: #262626;
   }
   .footer .navigation li {
     text-decoration: none;
@@ -291,12 +322,12 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 35px;
-    background-color: transparent;
+    background-color: #262626;
   }
   .footer .navigation a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
-    background-color: transparent;
+    background-color: #262626;
   }
   .footer .socials li {
     text-decoration: none;
@@ -307,12 +338,12 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 35px;
-    background-color: transparent;
+    background-color: #262626;
   }
   .footer .socials a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
-    background-color: transparent;
+    background-color: #262626;
   }
   
   
